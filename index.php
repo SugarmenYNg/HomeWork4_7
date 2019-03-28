@@ -21,7 +21,8 @@ print_r($arFirst);
 echo "</pre>";
 
 //Второй массив с ключами массива по возрастанию
-$arTwo = array_combine(range(90, 150, 3), range(90,150, 3));
+$arTwo = $arFirst;
+ksort($arTwo);
 echo "<b>Второй массив с ключами по возрастанию:</b>";
 echo "<pre>";
 print_r($arTwo);
